@@ -17,10 +17,26 @@
 
 Install my-project with git, change allow ip pool before start.
 
+Windows
 ```bash
   git clone https://github.com/TheDmitryY/osint-git
-  pip install -r requirements.txt
+  install.bat
   python main.py
+```
+Linux
+
+```bash
+  git clone https://github.com/TheDmitryY/osint-git
+  install.sh
+  python3 main.py
+```
+Docker
+
+add 'TOKEN' in .env file
+```bash
+  cd app
+  docker build -t osint-git-image .
+  docker run -d --name osint-git-bot osint-git-image
 ```
     
 ## Features
